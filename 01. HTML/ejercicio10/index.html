@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale="1.0"/>
+        <title>Hola Mundo</title>
+        <link rel="stylesheet" href="css/estilos.css"/>
+    </head>
+    <body>
+        <section>
+            <form autocomplete="on" action="https://httpbin.org/post" method="POST">
+                <div>
+                    <h1>Registro</h1>
+                </div>
+                <div>
+                    <input type="text" name="nombre" placeholder="Nombre de usuario">
+                </div>
+                <div>
+                    <input type="password" name="pw" placeholder="Contraseña" pattern="[A-Za-z0-9]{8}">
+                </div>
+                <div>
+                    <input type="date" name="cumple">
+                </div>
+                <div>
+                    <input type="password" name="pw2" placeholder="Repite tu contraseña" pattern="[A-Za-z0-9]{8}">
+                </div>
+                <div>
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

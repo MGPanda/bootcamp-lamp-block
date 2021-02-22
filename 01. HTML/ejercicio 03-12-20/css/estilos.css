@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* MOBILE */
+
+header {
+  background-color: aqua;
+}
+
+.uno,
+.tres {
+  background-color: blue;
+}
+
+.dos,
+.cuatro {
+  background-color: red;
+}
+
+/* TABLET */
+
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: 50%;
+    border: 1px solid black;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .box {
+    width: 100%;
+  }
+}

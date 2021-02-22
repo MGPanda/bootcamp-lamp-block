@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(17, 17, 17);
+  background: linear-gradient(
+    343deg,
+    rgba(17, 17, 17, 1) 0%,
+    rgba(0, 31, 63, 1) 50%,
+    rgba(0, 116, 217, 1) 100%
+  );
+  font-family: serif;
+}
+
+main {
+  margin: 5% 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.charsDiv {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card {
+  padding: 20px;
+  width: 30%;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 10px;
+  max-height: 40vw;
+  overflow-y: auto;
+}
+
+.charCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgb(255, 133, 27);
+  background: linear-gradient(
+    171deg,
+    rgba(255, 133, 27, 1) 0%,
+    rgba(255, 220, 0, 1) 50%,
+    rgba(255, 65, 54, 1) 100%
+  );
+}
+
+.charCard img {
+  border-radius: inherit;
+}
+
+.battleCard {
+  overflow-y: scroll;
+  height: 50vw;
+}
+
+.attack {
+  color: red;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 375px) {
+  .charsDiv {
+    margin: 5% 0;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .charsDiv {
+    margin: 5% 0;
+  }
+  .card {
+    width: 45%;
+  }
+}

@@ -1,0 +1,36 @@
+$orange: #eb621a;
+
+.newsPiece {
+  padding: 0 5% 5% 5%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+
+  iframe {
+    width: 100%;
+    height: 40vw;
+  }
+
+  img {
+    float: left;
+    width: 25%;
+    margin: 10px;
+  }
+
+  br {
+    margin-top: 25px;
+  }
+}
+
+.closePiece {
+  margin-left: 100%;
+  color: orange;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

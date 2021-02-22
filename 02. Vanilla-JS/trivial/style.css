@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  margin: 5% 25%;
+  padding: 20px;
+  text-align: center;
+}
+
+input[type="radio"] {
+  margin: 0 10px;
+}
+
+.questionDiv {
+  margin: 20px 0;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.answerDiv {
+  margin: 10px 0;
+}

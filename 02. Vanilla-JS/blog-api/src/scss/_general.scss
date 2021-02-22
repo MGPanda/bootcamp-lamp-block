@@ -1,0 +1,49 @@
+$orange: #eb621a;
+
+$s: 768px;
+$m: 1024px;
+
+@mixin small {
+  @media screen and (max-width: $s) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: $s) and (max-width: $m) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: $m) {
+    @content;
+  }
+}
+
+@keyframes fadein {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  animation: fadein 1s;
+}
+
+body {
+  font-family: serif;
+}
+
+a {
+  text-decoration: none;
+  color: $orange;
+}

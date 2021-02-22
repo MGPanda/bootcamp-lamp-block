@@ -1,0 +1,30 @@
+body {
+  background-color: lightgray;
+}
+section {
+  text-align: center;
+}
+h1 {
+  color: blue;
+}
+img {
+  max-width: 100%;
+}
+figcaption {
+  color: navy;
+}
+p {
+  color: brown;
+}
+p {
+  color: blue;
+}
+#mi-parrafo {
+  color: blueviolet;
+  font-size: 25px;
+  font-weight: bold;
+}
+.parrafo-especial {
+  font-size: 20px;
+  border: 1px dashed blue;
+}

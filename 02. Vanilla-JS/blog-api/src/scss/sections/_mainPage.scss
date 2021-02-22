@@ -1,0 +1,27 @@
+main {
+  margin: 1% 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main div {
+  margin-top: 2.5%;
+}
+
+img {
+  width: 100%;
+}
+
+.news:hover {
+  color: $orange;
+  cursor: pointer;
+}
+
+.subPieces,
+.additionalPieces {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}

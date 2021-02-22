@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 25px;
+  font-family: Verdana, sans-serif;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+header {
+  background-color: teal;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  background-color: aqua;
+  padding: 16px 0;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  list-style: none;
+}
+
+li {
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+a:hover {
+  background-color: teal;
+  color: white;
+}
+
+footer {
+  background-color: teal;
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
+
+main,
+aside {
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  width: 60%;
+}
+
+aside {
+  width: 35%;
+}
+
+button {
+  background-color: teal;
+  color: white;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+.contenedor {
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  padding: 10px;
+  text-align: justify;
+}
+
+h1,
+h2 {
+  padding: 10px 0;
+}
+
+#dolorem {
+  color: red;
+  font-weight: bold;
+}
+
+.rojo {
+  color: red;
+}
+
+.verde {
+  color: green;
+}
+
+.azul {
+  color: blue;
+}
+
+.botones {
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+.galeria {
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  main,
+  aside {
+    width: 100%;
+  }
+
+  .contenedor,
+  ul {
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  .botones button {
+    font-size: 0px;
+  }
+
+  .botones #foto-anterior::after {
+    font-size: 20px;
+    content: "<-";
+  }
+
+  .botones #foto-proxima::after {
+    font-size: 20px;
+    content: "->";
+  }
+
+  #foto1,
+  #foto2,
+  #texto1,
+  #texto2 {
+    display: none;
+  }
+}
